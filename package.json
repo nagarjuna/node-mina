@@ -1,0 +1,47 @@
+{
+  "name": "mina",
+  "version": "1.0.9",
+  "description": "Lightweight deployer for node development, inspired by mina and minco",
+  "homepage": "http://onlyvc.us/mina",
+  "bugs": "https://github.com/fanweixiao/mina/issues",
+  "dependencies": {
+    "cli-color": "~0.3.2",
+    "nopt": "~3.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "*"
+  },
+  "files": ["bin","completion","lib"],
+  "bin": {
+    "mina": "./bin/mina-cli"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fanweixiao/mina"
+  },
+  "keywords": [
+    "deploy",
+    "deployment",
+    "coffeescript",
+    "mina",
+    "minco",
+    "git",
+    "ssh",
+    "forever",
+    "pm2"
+  ],
+  "author": "C.C. <fanweixiao@gmail.com> (http://onlyvc.us)",
+  "contributors": [
+    "Nealma <neal.ma.sh@gmail.com>",
+    "Houjiazong <houjiazong@gmail.com>",
+    "BordenJardine <bordenjardine@gmail.com>",
+    "Marcus Vorwaller (https://github.com/marcus)",
+    "Allan Wind (https://github.com/allanwind)"
+  ],
+  "readmeFilename": "README.md",
+  "preferGlobal": true,
+  "license": "MIT"
+}
