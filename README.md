@@ -37,7 +37,7 @@ Add this to your .bashrc, In this version only support bash
         // e.g. "projects/project_luna"
         , "prj_git_relative_dir": ""
         // Branch to be checkout and deploy
-        , "branch": "master"
+        , "branch": "master" // can be dynamic branch with MINA_DEPLOY_BRANCH environment variable 
         // If remove git cloned directory then git clone again,
         // default is false
         , "force_regenerate_git_dir": false
@@ -61,6 +61,10 @@ Add this to your .bashrc, In this version only support bash
 
     # Or, indicate deploy config file
     MINA_CONFIG=deploy_scripts/to_dev.json mina deploy
+
+    # Override branch in deploy config file while deploying
+    MINA_DEPLOY_BRANCH=feature/main MINA_CONFIG=deploy_scripts/to_dev.json mina deploy
+
 
 ## Keep in mind...
 
